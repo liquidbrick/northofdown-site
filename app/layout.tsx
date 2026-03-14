@@ -1,25 +1,25 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Lato } from "next/font/google";
+import { Cinzel, Raleway } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
   subsets: ["latin"],
   weight: ["400", "600", "700", "900"],
 });
 
-const lato = Lato({
-  variable: "--font-lato",
+const raleway = Raleway({
+  variable: "--font-raleway",
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
+  weight: ["300", "400", "500", "700"],
 });
 
 export const metadata: Metadata = {
   title: "North of Down | Official Website",
-  description: "The official website of North of Down — Country & Americana music. Listen, tour dates, and more.",
+  description: "North of Down — psychedelic, spirit-centered music. Listen, tour dates, and more.",
   openGraph: {
     title: "North of Down",
-    description: "Country & Americana music. Official site.",
+    description: "Spirit-centered music. Official site.",
     url: "https://northofdown.com",
     siteName: "North of Down",
     type: "website",
@@ -28,12 +28,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${playfair.variable} ${lato.variable} antialiased`}>
+      <body className={`${cinzel.variable} ${raleway.variable} antialiased`}>
         {children}
       </body>
     </html>

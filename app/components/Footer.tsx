@@ -1,9 +1,9 @@
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="py-12 px-6 bg-[#0d0804] border-t border-[#f5efe6]/5">
+    <footer className="py-12 px-6 bg-[#05030f] border-t border-[#d946ef]/10">
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        <p className="font-[family-name:var(--font-playfair)] text-[#f5efe6]/30 text-lg tracking-widest">
+        <p className="font-[family-name:var(--font-cinzel)] text-[#f0e6ff]/25 text-base tracking-widest shimmer-text">
           North of Down
         </p>
 
@@ -14,17 +14,14 @@ export default function Footer() {
             { label: "Facebook", href: "#" },
             { label: "YouTube", href: "#" },
           ].map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="font-[family-name:var(--font-lato)] text-xs text-[#f5efe6]/25 hover:text-[#c8872a] transition-colors tracking-widest uppercase"
-            >
+            <a key={link.label} href={link.href}
+              className="font-[family-name:var(--font-raleway)] text-xs text-[#f0e6ff]/20 hover:text-[#d946ef] transition-colors tracking-widest uppercase">
               {link.label}
             </a>
           ))}
         </div>
 
-        <p className="font-[family-name:var(--font-lato)] text-[#f5efe6]/20 text-xs tracking-widest">
+        <p className="font-[family-name:var(--font-raleway)] text-[#f0e6ff]/15 text-xs tracking-widest">
           © {year} North of Down
         </p>
       </div>
