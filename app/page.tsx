@@ -5,10 +5,12 @@ import About from "./components/About";
 import Shows from "./components/Shows";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import AudioPreview from "./components/AudioPreview";
 
 export default function Home() {
   return (
     <main>
+      <AudioPreview />
       <Navbar />
       <Hero />
       <hr className="section-divider" />
